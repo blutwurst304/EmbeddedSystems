@@ -1,6 +1,7 @@
 #include "PreAllocString.h"
 #include "Printf.h"
 #include <stdio.h>
+#include <stdarg.h>
 
 PreAllocString::operator const char*() const
 {

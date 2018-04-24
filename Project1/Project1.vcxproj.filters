@@ -41,8 +41,5 @@
     <ClCompile Include="PreAllocString.cpp">
       <Filter>Quelldateien</Filter>
     </ClCompile>
-    <ClCompile Include="7Segment.cpp">
-      <Filter>Quelldateien</Filter>
-    </ClCompile>
   </ItemGroup>
 </Project>

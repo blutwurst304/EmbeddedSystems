@@ -147,7 +147,6 @@
     <ClInclude Include="Printf.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="7Segment.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="OptParser.cpp" />
     <ClCompile Include="PreAllocString.cpp" />

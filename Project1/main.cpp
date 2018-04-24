@@ -41,23 +41,25 @@ void testPreAllocString() {
 	puts(test);
 	test += "01234567890";
 	puts(test);
-	printf("Size: %d Length: %d\n", test.SizeOf(), test.GetLength());
+	printf("Size: %d Length: %d\n", static_cast<int>(test.SizeOf()), static_cast<int>(test.GetLength()));
 	printf("CharAt 2: %c\n", test[2]);
 	test.AddFormat("Das %s und das %c ein char.", "ist ein String", 'c');
 	puts(test);
-	printf("Size: %d Length: %d\n", test.SizeOf(), test.GetLength());
+	printf("Size: %d Length: %d\n", static_cast<int>(test.SizeOf()), static_cast<int>(test.GetLength()));
 	std::getchar();
 }
 
 void test7Segment() {
-	MultiDigit md{ 1, 2, 3, 4 };
+	MultiDigit md{ 1, 2, 3, 4, 5, 6, 7, 8, 9, 0};
 	MultiDigit md2{ 1 };
+	std::cout << static_cast<const char*>(md) << std::endl;
+	std::cout << static_cast<const char*>(md2) << std::endl;
 	std::getchar();
 }
 
-int main(int argc, char* argv[]) {
+int main() {
 	//TestOptParser(argc, argv);
 	//TestPrintf();
-	testPreAllocString();
-	//test7Segment();
+	//testPreAllocString();
+	test7Segment();
 }

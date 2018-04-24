@@ -3,9 +3,10 @@
 #define CREATE(varName, size) \
 	char varName##tmp[size+1]; \
 	PreAllocString varName = PreAllocString(varName##tmp, &varName##tmp[size]);
-
+#include <stddef.h>
 class PreAllocString {
 public:
+	//typedef long unsigned int size_t;
 	operator const char *() const; //Typecast to char*
 	operator const void *() const; //to void*
 	const char& operator [] (const int idx);  //tested
