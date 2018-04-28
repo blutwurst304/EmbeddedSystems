@@ -1,5 +1,2 @@
 ﻿  main.cpp
-c:\users\johann\source\repos\embeddedsystems\project1\main.cpp(53): error C2440: 'initializing': cannot convert from 'initializer list' to 'MultiDigit'
-  c:\users\johann\source\repos\embeddedsystems\project1\main.cpp(53): note: No constructor could take the source type, or constructor overload resolution was ambiguous
-c:\users\johann\source\repos\embeddedsystems\project1\main.cpp(54): error C2440: 'initializing': cannot convert from 'initializer list' to 'MultiDigit'
-  c:\users\johann\source\repos\embeddedsystems\project1\main.cpp(54): note: No constructor could take the source type, or constructor overload resolution was ambiguous
+  Project1.vcxproj -> C:\Users\Johann\source\repos\EmbeddedSystems\x64\Debug\Project1.exe

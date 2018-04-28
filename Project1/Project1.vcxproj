@@ -149,7 +149,6 @@
   <ItemGroup>
     <ClCompile Include="main.cpp" />
     <ClCompile Include="OptParser.cpp" />
-    <ClCompile Include="PreAllocString.cpp" />
     <ClCompile Include="Printf.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

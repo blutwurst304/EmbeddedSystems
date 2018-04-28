@@ -29,7 +29,7 @@ void TestPrintf() {
 }
 
 void testPreAllocString() {
-	CREATE(test, 1000);
+	/*CREATE(test, 1000);
 
 	test = 'c';
 	test.AddWhiteSpace();
@@ -46,11 +46,11 @@ void testPreAllocString() {
 	test.AddFormat("Das %s und das %c ein char.", "ist ein String", 'c');
 	puts(test);
 	printf("Size: %d Length: %d\n", static_cast<int>(test.SizeOf()), static_cast<int>(test.GetLength()));
-	std::getchar();
+	std::getchar();*/
 }
 
 void test7Segment() {
-	MultiDigit md{ 1, 2, 3, 4, 5, 6, 7, 8, 9, 0};
+	MultiDigit md{0, 1, 2, 3, 4, 5, 6, 7, 8, 9};
 	MultiDigit md2{ 1 };
 	std::cout << static_cast<const char*>(md) << std::endl;
 	std::cout << static_cast<const char*>(md2) << std::endl;
