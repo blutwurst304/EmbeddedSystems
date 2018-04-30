@@ -2,6 +2,7 @@
 #define PREALLOCSTRING_H
 
 #include <stdio.h>
+#include <stdarg.h>
 
 template<size_t _Template_Size>
 class PreAllocString

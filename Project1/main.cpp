@@ -50,10 +50,12 @@ void testPreAllocString() {
 }
 
 void test7Segment() {
-	MultiDigit md{0, 1, 2, 3, 4, 5, 6, 7, 8, 9};
-	MultiDigit md2{ 1 };
-	std::cout << static_cast<const char*>(md) << std::endl;
-	std::cout << static_cast<const char*>(md2) << std::endl;
+	MultiDigit<int, int, int, int, int, int, int, int, int , int> md0{0, 1, 2, 3, 4, 5, 6, 7, 8, 9};
+	MultiDigit<int, int, int, int, int, int, int, int, int, int> md1{9, 8, 7, 6, 5, 4, 3, 2, 1, 0};
+	MultiDigit<int> md2{ 1 };
+	std::cout << static_cast<const char*>(md0);
+	std::cout << static_cast<const char*>(md1);
+	std::cout << static_cast<const char*>(md2);
 	std::getchar();
 }
 
