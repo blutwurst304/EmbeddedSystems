@@ -4,4 +4,7 @@
     <LocalDebuggerCommandArguments>-x99 -f 10 -c -v=0 -d=9999  -sap5 -m -n=</LocalDebuggerCommandArguments>
     <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
   </PropertyGroup>
+  <PropertyGroup>
+    <ShowAllFiles>false</ShowAllFiles>
+  </PropertyGroup>
 </Project>

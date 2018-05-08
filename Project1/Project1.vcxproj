@@ -142,9 +142,8 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClInclude Include="7Segment.h" />
     <ClInclude Include="OptParser.h" />
-    <ClInclude Include="PreAllocString.h" />
+    <ClInclude Include="PoolAllocator.h" />
     <ClInclude Include="Printf.h" />
   </ItemGroup>
   <ItemGroup>

@@ -8,16 +8,15 @@ template<size_t _Template_Size>
 class PreAllocString
 {
 public:
-	constexpr PreAllocString()
-		: currentLen{ 0 }
+	constexpr PreAllocString() : buffer{}
 	{
 	}
 
-	operator const char*() const {
+	constexpr operator const char*() const {
 		return buffer;
 	}
 
-	operator const void*() const {
+	constexpr operator const void*() const {
 		return reinterpret_cast<void *>(buffer);
 	}
 
@@ -145,7 +144,7 @@ public:
 
 private:
 	char buffer[_Template_Size];
-	size_t currentLen;
+	size_t currentLen = 0;
 	size_t maxLen = _Template_Size;
 };
 

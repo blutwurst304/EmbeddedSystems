@@ -2,7 +2,6 @@
 #include "PreAllocString.h"
 #include <stdarg.h>
 
-#define MAX_DIGITS 100
 #define DIGIT_CHARLENGTH 20
 
 static const char* digits = " - | |   | | -      |     |    -   | - |   -  -   | -   | -    | | -   |    - |   -   | -  - |   - | | -  -   |     |    - | | - | | -  - | | -   | - ";
@@ -20,13 +19,13 @@ public:
 		return static_cast<const char*>(string);
 	}
 private:
-	PreAllocString<MAX_DIGITS*DIGIT_CHARLENGTH> string;
+	PreAllocString<sizeof...(Args)*DIGIT_CHARLENGTH> string;
 	const char* createString(int count, Args ... args)
 	{
 		for (int i = 0; i < 5; i++) {
 			createLine(i, count, args...);
 		}
-		return static_cast<const char*>(string);
+		return string;
 	}
 	void createLine(int line, int count, ...)
 	{

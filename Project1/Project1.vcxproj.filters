@@ -21,10 +21,7 @@
     <ClInclude Include="OptParser.h">
       <Filter>Headerdateien</Filter>
     </ClInclude>
-    <ClInclude Include="PreAllocString.h">
-      <Filter>Headerdateien</Filter>
-    </ClInclude>
-    <ClInclude Include="7Segment.h">
+    <ClInclude Include="PoolAllocator.h">
       <Filter>Headerdateien</Filter>
     </ClInclude>
   </ItemGroup>
